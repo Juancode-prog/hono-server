@@ -1,0 +1,27 @@
+{
+    "errorLens.statusBarMessageTemplate": "$message",
+    "notebook.defaultFormatter": "formulahendry.auto-close-tag",
+    "editor.defaultFormatter": "formulahendry.auto-rename-tag",
+    "eslint.problems.shortenToSingleLine": true,
+    "eslint.quiet": true,
+    "eslint.probe": [
+        "astro",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "markdown",
+        "json"
+    ],
+    "eslint.lintTask.enable": true,
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.useFlatConfig": true,
+    "eslint.useESLintClass": true,
+    "eslint.ignoreUntitled": true,
+    "eslint.format.enable": true,
+    "eslint.debug": true,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    }
+}
