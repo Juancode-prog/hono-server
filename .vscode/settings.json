@@ -23,5 +23,6 @@
     "eslint.debug": true,
     "[dockercompose]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    }
+    },
+    "material-icon-theme.activeIconPack": "nest"
 }

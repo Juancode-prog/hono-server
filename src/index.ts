@@ -22,7 +22,6 @@ const app = new Hono();
     app.route("/", tasks);
 
     // Iniciar el servidor
-    console.log("Servidor HonoJS está corriendo en el puerto 3000.");
   } catch (error) {
     console.error("Error al conectar a Redis:", error);
     process.exit(1); // Si la conexión falla, salimos con código de error
