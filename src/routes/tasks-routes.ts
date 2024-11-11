@@ -81,7 +81,7 @@ taskRouter.get("/:id", async (c) => {
 
     await client.set(id, JSON.stringify(taskFound), {
       EX: 15,
-      NX: true,
+      NX: true
     });
 
     return c.json(taskFound, 200);

@@ -6,7 +6,7 @@
     "docker:wait": "docker-compose up --wait",
     "docker:ps": "docker ps",
     "prisma:gn": "prisma generate",
-    "build": "bun build src/index.ts --outdir dist",
+    "build": "bun build ./src/index.ts --target=bun --outdir=dist",
     "start": "bun run dist/index.js"
   },
   "dependencies": {

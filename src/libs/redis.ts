@@ -4,8 +4,11 @@ let redisClient: RedisClientType | null = null;
 
 export async function ConnectRedis() {
   if (redisClient) {
+    console.log("Conexión reutlizada");
     return redisClient;
   }
+
+  console.log("Nueva conexión", redisClient);
 
   try {
     redisClient = createClient();
@@ -15,8 +18,6 @@ export async function ConnectRedis() {
     });
 
     await redisClient.connect();
-    console.log("Conexión a Redis establecida exitosamente.");
-
     return redisClient;
   } catch (err) {
     console.error("Error al conectar a Redis:", err);
